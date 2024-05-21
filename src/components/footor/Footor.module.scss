@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footor{
+    background-color: rgb(125, 47, 47);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        padding: 20px 0;
+        margin: 20px 0;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            color: white;
+            gap: 5px;
+        }
+    }
+}

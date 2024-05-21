@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: url(https://preview.colorlib.com/theme/robotics/img/banner-bg.jpg);
+    .container{
+        padding: 7px 0;
+        margin: auto;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+        .headerTop{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            // .headerTopLogo{
+            //     width: 15%;
+            //     img{
+            //         width: 100%;
+            //     }
+            // }
+            .headerTopNav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              
+              .hamburger{
+                display: flex;
+                display: none;
+              }
+                ul{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: space-between;
+                    li{
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            font-size: 15px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .headerBottom{
+            display: flex;
+           align-items: center;
+            width: 100%;
+            justify-content: space-around;
+            .headerBottomText{
+                gap: 15px;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                h1{
+                    font-size: 50px;
+                     color: white;
+                     
+                }
+                p{
+                    font-size: 17px;
+                    color: rgba(255, 255, 255);
+                }
+                button{
+                    width: 140px;
+                    height: 45px;
+                    border: none;
+                }
+
+            }
+            .headerBottomLogo{
+                width: 45%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .header{
+        .container{
+            .headerTop{
+                .headerTopNav{
+                    ul{
+                        display: none;
+                    }
+                    .hamburger{
+                        display: block;
+                    }
+                }
+            }
+            .headerBottom{
+                .headerBottomText{
+                    h1{
+                        font-size: 32px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    button{
+                        width: 140px;
+                        height: 30px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) and (min-width:300px) {
+    .header{
+        .container{
+            .headerTop{
+                .headerTopNav{
+                    ul{
+                        display: none;
+                    }
+                    .hamburger{
+                        display: block;
+                    }
+                }
+            }
+            .headerBottom{
+                flex-direction: column;
+                gap: 20px;
+                .headerBottomText{
+                    padding: 0 0 15px 0;
+                    width: 90%;
+                    h1{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    button{
+                        width: 140px;
+                        height: 30px;
+                        border: none;
+                    }
+                }
+                .headerBottomLogo{
+
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

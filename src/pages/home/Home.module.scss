@@ -1,0 +1,16 @@
+.proBoxMain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        width: 85%;
+        padding: 20px 0;
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+}
